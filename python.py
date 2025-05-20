@@ -61,10 +61,10 @@ while True:
                 cv2.imwrite(filename, frame)
                 print(f'[INFO] Screenshot saved to: {filename}')
                 screenshot_taken = True
-            elif total_fingers == 1:
-                print("[INFO] One finger detected — locking the device...")
-                ctypes.windll.user32.LockWorkStation()
-                break  # Optional: stop the script after locking
+                """ elif total_fingers == 1:
+                    print("[INFO] One finger detected — locking the device...")
+                    ctypes.windll.user32.LockWorkStation()
+                    break  # Optional: stop the script after locking """
             elif total_fingers != 0:
                 screenshot_taken = False
 
