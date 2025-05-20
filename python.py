@@ -8,7 +8,7 @@ import ctypes
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 
-hands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7)
+hands = mp_hands.Hands(max_num_hands=2, min_detection_confidence=0.7)
 cap = cv2.VideoCapture(0)
 
 tip_ids = [4, 8, 12, 16, 20]  # Thumb and fingers tip landmarks
